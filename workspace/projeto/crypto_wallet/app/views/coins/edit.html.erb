@@ -1,0 +1,12 @@
+<% content_for :title, "Editing coin" %>
+
+<h1>Editing coin</h1>
+
+<%= render "form", coin: @coin %>
+
+<br>
+
+<div>
+  <%= link_to "Show", @coin %> |
+  <%= link_to "Back", coins_path %>
+</div>
