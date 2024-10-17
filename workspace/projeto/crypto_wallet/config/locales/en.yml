@@ -29,3 +29,11 @@
 
 en:
   hello: "Hello world"
+  
+  links:
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"
+    back: "Back"
+  
+
