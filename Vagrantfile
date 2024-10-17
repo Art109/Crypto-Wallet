@@ -4,6 +4,8 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox"
   config.vm.box = "jacksonpires/curso-rails"
   config.vm.box_version = "1.0.0"
+  config.vm.boot_timeout = 600  # Increase timeout to 10 minutes
+
  
   config.vm.network :forwarded_port, guest: 3000, host: 3000 # rails
   config.vm.network :forwarded_port, guest: 8181, host: 8181 # cloud9
