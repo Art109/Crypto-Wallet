@@ -6,3 +6,28 @@ pt-BR:
         show: "Mostrar"
         delete: "Excluir"
         back: "Voltar"
+        
+    activerecord:
+        models:
+            coin: 
+                one: Moeda
+                other: Moedas
+            mining_type: 
+                one: Tipo de Mineração
+                other: Tipos de Mineração
+        attributes:
+            coin:
+                id: Codigo de Identificação
+                description: Descrição
+                acronym: Sigla
+                url_image: URL da Imagem
+                mining_type: Tipo de Mineração
+                mining_type_id: ID do Tipo de Mineração
+                update_at: Atualizado em
+                created_at: Criado em
+            mining_type:
+                id: Codigo de Identificação
+                description: Descrição
+                acronym: Sigla
+                update_at: Atualizado em
+                created_at: Criado em
