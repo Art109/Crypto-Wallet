@@ -10,6 +10,17 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
+ *
  *= require_self
  */
+
+
+body{
+    background-color: <%= Rails.env.development? ? 'yellow' : 'red'%>;
+    background-image: asset-url('rails.png');
+    color: #333;
+    margin: 33px;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+}
