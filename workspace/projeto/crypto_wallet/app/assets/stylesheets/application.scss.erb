@@ -11,13 +11,13 @@
  * It is generally better to create a new file per style scope.
  *
  *
+ *= require bootstrap
  *= require_self
  */
 
 
 body{
-    background-color: <%= Rails.env.development? ? 'yellow' : 'red'%>;
-    background-image: asset-url('rails.png');
+    background-color: #fff;
     color: #333;
     margin: 33px;
     font-family: verdana, arial, helvetica, sans-serif;
