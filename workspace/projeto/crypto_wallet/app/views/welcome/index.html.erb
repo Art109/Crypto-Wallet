@@ -1,12 +1,9 @@
-<p>
-    <%= link_to 'Português', root_path(locale:'pt-BR')%>
-</p>
-<p>
-    <%= link_to 'English', root_path(locale:'en')%>
-</p>
-<h1>Seja Bem vindo!</h1>
-<p>O idioma usado nessa aplicação é <%= t("actual_locale")%></p>
-<p>Data: <%= I18n.l(Date.today) %> </p>
-<p><%= t('hello') %></p>
+<div class="mt-4 p-5 bg-secondary text-white rounded">
+    <h1>Seja Bem-Vindo</h1>
+    <h2>Este é o Crypto Wallet</h2>
+    <p>Para começar, selecione uma das opções abaixo:</p>
+    <%= render "menu" %>
+    
+ </div>
 
-<%= render "menu" %>
+
