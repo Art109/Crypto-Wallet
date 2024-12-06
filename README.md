@@ -4,11 +4,11 @@ O sistema funciona como uma simples carteira virtual onde pode registrar cripto 
 
 No projeto foi utilizado
 
--Vagrant 2.4 Para o controle do container via terminal
--VirtualBox 7 Para a virtualização de ambiente Ubuntu
--Bootstrap 5 para o visual
--Ruby 3.3.5
--Rails 7.2.1
+- Vagrant 2.4 Para o controle do container via terminal
+- VirtualBox 7 Para a virtualização de ambiente Ubuntu
+- Bootstrap 5 para o visual
+- Ruby 3.3.5
+- Rails 7.2.1
 
 # Como testar o projeto
 
@@ -40,7 +40,7 @@ E digite o comando rails s ou rails s -b 0.0.0.0
 
 5- Acesse o Projeto em http://localhost:3000
 
-## Dicas de comandos para gerir sua box
+## Comandos para gerir sua box
 
 - Para pausar a box
 ```
