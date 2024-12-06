@@ -13,6 +13,7 @@ pt-BR:
         show: "Mostrar"
         delete: "Excluir"
         back: "Voltar"
+        new: "Novo"
         
     activerecord:
         models:

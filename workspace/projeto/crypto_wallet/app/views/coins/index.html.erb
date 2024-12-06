@@ -2,7 +2,7 @@
 
 <% content_for :title, "Coins" %>
 
-<h1>Coins</h1>
+<h1><%=Coin.model_name.human(count: @coins.count)%></h1>
 
 <table class="table table-hover">
   <thead>
@@ -19,10 +19,10 @@
         <td><%= coin.description %></td>
         <td><%= coin.acronym %></td>
         <td><%= image_tag coin.url_image, width: 35, height: 35 %></td>
-        <td><%= link_to t("links.show"), coin %></td>
+        <td><%= link_to t("links.show"), coin, class:"btn btn-info" %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<%= link_to "New coin", new_coin_path %>
+<%= link_to t('links.new'), new_coin_path, class:"btn btn-primary" %>
