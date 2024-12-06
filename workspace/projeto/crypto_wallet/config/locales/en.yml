@@ -31,6 +31,10 @@ en:
   hello: "Hello world"
   
   actual_locale: "English(International)"
+  welcome: "Welcome"
+  messages:
+    menu: "To start, choose an option below:"
+    welcome: "This is the Crypto Wallet"
   
   links:
     edit: "Edit"
