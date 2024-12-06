@@ -11,27 +11,29 @@
     </div>
   <% end %>
 
-  <div>
+  <div class="mb-3">
     <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
-  </div>
-
-  <div>
-    <%= form.label :acronym, style: "display: block" %>
-    <%= form.text_field :acronym %>
-  </div>
-
-  <div>
-    <%= form.label :url_image, style: "display: block" %>
-    <%= form.text_field :url_image %>
+    <%= form.text_field :description,  class:"form-control", placeholder:"Bitcoin" %>
   </div>
   
-  <div>
+
+  <div class="mb-3">
+    <%= form.label :acronym, style: "display: block" %>
+    <%= form.text_field :acronym, class:"form-control", placeholder:"BTC"%>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :url_image, style: "display: block" %>
+    <%= form.text_field :url_image, class:"form-control", placeholder:"http://img.ur/bitcoin.png" %>
+  </div>
+  
+  <div class="mb-3">
     <%= form.label :mining_type_id, style: "display: block" %>
-    <%= form.select("mining_type_id", @mining_type_options ,{ include_blank: "Selecione..."} )%>
+    <%= form.select("mining_type_id", @mining_type_options ,{ include_blank: "Selecione..."}, class:"form-control" )%>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit nil, class:"btn btn-primary" %> |
+    <%= button_to t("links.delete"), @coin, method: :delete, class:"btn btn-primary" %>
   </div>
 <% end %>

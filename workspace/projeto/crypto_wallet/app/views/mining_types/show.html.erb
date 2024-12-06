@@ -1,10 +1,25 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @mining_type %>
+<form>
+  <fieldset disabled>
+      <div class="mb-3">
+        <%= label_tag nil, @mining_type.class.human_attribute_name(:description) , style: "display: block" %>
+        <%= text_field_tag nil, @mining_type.description ,  class:"form-control" %>
+      </div>
+      
+    
+      <div class="mb-3">
+        <%= label_tag nil, @mining_type.class.human_attribute_name(:acronym)  , style: "display: block" %>
+        <%= text_field_tag nil, @mining_type.acronym , class:"form-control"%>
+      </div>
+      
+     
+  </fieldset>
+</form>
 
 <div>
-  <%= link_to t("links.edit"), edit_mining_type_path(@mining_type) %> |
-  <%= link_to t("links.back"), mining_types_path %>
+  <%= link_to t("links.edit"), edit_mining_type_path(@mining_type), class:"btn btn-primary" %> |
+  <%= link_to t("links.back"), mining_types_path, class:"btn btn-primary" %>
 
-  <%= button_to t("links.delete"), @mining_type, method: :delete %>
+  
 </div>

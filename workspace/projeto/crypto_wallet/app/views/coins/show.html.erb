@@ -1,10 +1,37 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @coin %>
+
+
+<form>
+  <fieldset disabled>
+      <div class="mb-3">
+        <%= label_tag nil, @coin.class.human_attribute_name(:description) , style: "display: block" %>
+        <%= text_field_tag nil, @coin.description ,  class:"form-control" %>
+      </div>
+      
+    
+      <div class="mb-3">
+        <%= label_tag nil, @coin.class.human_attribute_name(:acronym)  , style: "display: block" %>
+        <%= text_field_tag nil, @coin.acronym , class:"form-control"%>
+      </div>
+    
+      <div class="mb-3">
+        <%= label_tag nil, @coin.class.human_attribute_name(:url_image)  , style: "display: block" %>
+        <%= text_field_tag nil, @coin.url_image , class:"form-control" %>
+      </div>
+      
+      <div class="mb-3">
+        <%= label_tag nil, @coin.class.human_attribute_name(:mining_type)  , style: "display: block" %>
+        <%= text_field_tag nil , @coin.mining_type.description , class:"form-control" %>
+      </div>
+      
+     
+  </fieldset>
+</form>
 
 <div>
-  <%= link_to t("links.edit"), edit_coin_path(@coin) %> |
-  <%= link_to t("links.back"), coins_path %>
+  <%= link_to t("links.edit"), edit_coin_path(@coin), class:"btn btn-primary" %> |
+  <%= link_to t("links.back"), coins_path, class:"btn btn-primary" %>
 
-  <%= button_to t("links.delete"), @coin, method: :delete %>
+  
 </div>

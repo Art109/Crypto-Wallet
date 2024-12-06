@@ -42,5 +42,11 @@ en:
     delete: "Delete"
     back: "Back"
     new: "New"
+  new:
+    coin : "New Coin"
+    mining_type : "New Mining Type"
+  editing:
+    coin : "Editing Coin"
+    mining_type : "Editing Mining Type"
   
 
